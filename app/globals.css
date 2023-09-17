@@ -40,6 +40,28 @@
 }
 /* END: General styles */
 
+/* START: Navbar styles */
+
+.navContainer{
+  @apply fixed w-full h-[70px] top-0 left-0 bg-blue-600 text-white px-8 z-50 shadow-md
+};
+.logo{
+  @apply flex items-center content-center gap-4
+};
+.navItem{
+  @apply hidden md:flex items-center content-center gap-4
+};
+.toggleContainer{
+  @apply md:hidden absolute top-[70px] left-0 flex flex-col items-center justify-center w-[75%]  h-screen bg-blue-400 gap-4
+}
+
+
+.toggleBtn{
+  @apply md:hidden flex items-center content-center gap-4 cursor-pointer
+}
+
+/* END: Navbar styles */
+
 /* START: Hero styles */
 .hero {
   @apply flex xl:flex-row flex-col gap-5 relative z-0 max-w-[1440px] mx-auto;
