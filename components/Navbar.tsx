@@ -44,8 +44,8 @@ const Navbar = () => {
             {toggle ? <FaTimes></FaTimes> : <FaBars></FaBars>}
           </div>
           {/* \toggleContainerHidden */}
-          {toggle && (
-            <div className="toggleContainer">
+          
+            <div className={`${toggle ? 'toggleContainer':'toggleContainerHidden'}`}>
               {navBarLinks.map((link) => (
                 <Link
                   key={link.id}
@@ -55,9 +55,11 @@ const Navbar = () => {
                 >
                   {link.title}
                 </Link>
+                
               ))}
+              <button className=" bg-yellow-400 text-blue-900 rounded-md p-2"> Click Me</button>
             </div>
-          )}
+          
         </div>
       </div>
     </div>
